@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator</title>
 </head>
+
 <body>
-    <h1>Kalkulator</h1>
-    <br>
-      <p>
-        Upisi prvi broj:
-        <input type="number" id="prviBroj" placeholder="Prvi broj">
-       </p>
-       <p>
-        Upisi drugi broj:
-        <input type="number" id="drugiBroj" placeholder="Drugi broj">
-       </p>
-       <button onclick="zbroj()">Zbroji</button>
-       <p>=</p>
-      <p id="rezultat"></p>
-      <script src="zbroj.js"></script>
-      </div>
-      </body>
+  <h1>Kalkulator</h1>
+  <br>
+  <p>
+    Upisi prvi broj:
+    <input type="number" id="prviBroj" placeholder="Prvi broj">
+  </p>
+  <p>
+    Upisi drugi broj:
+    <input type="number" id="drugiBroj" placeholder="Drugi broj">
+  </p>
+  <input type="checkbox" name="" id="addCheckbox" onclick="checkboxEvent('addCheckbox')">Zbroj
+  <p><input type="checkbox" name="" id="subtractCheckbox" onclick="checkboxEvent('subtractCheckbox')">Oduzmi
+    <input type="checkbox" name="" id="multiplyCheckbox" onclick="checkboxEvent('multiplyCheckbox')">Pomnozi
+    <input type="checkbox" name="" id="divideCheckbox" onclick="checkboxEvent('divideCheckbox')">Podjeli
+    <button onclick="zbroj()">Izracunaj</button>
+  <p id="rezultat"> = </p>
+  <script src="zbroj.js"></script>
+  </div>
+</body>
+
 </html>
